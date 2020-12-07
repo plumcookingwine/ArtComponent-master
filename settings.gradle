@@ -1,0 +1,8 @@
+include ':irouter_annotation'
+include ':irouter_processor'
+include ':irouter_api'
+include ':base_library'
+include ':component_goods'
+include ':component_order'
+include ':app'
+rootProject.name = "ArtComponent-master"

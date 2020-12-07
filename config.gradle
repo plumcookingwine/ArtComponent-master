@@ -1,0 +1,86 @@
+ext {
+    //android开发版本配置
+    android = [
+            compileSdkVersion: 30,
+            buildToolsVersion: "30.0.2",
+            applicationId    : "cn.com.itink.newenergy",
+            minSdkVersion    : 21,
+            targetSdkVersion : 30,
+            versionCode      : 1,
+            versionName      : "1.0.0",
+    ]
+
+    //    BaseLibrary基础库
+    dep_base = [
+            // 基础库
+            "kotlinstd"          : "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version",
+            "anko"               : "org.jetbrains.anko:anko-commons:0.10.8",
+            "corektx"            : "androidx.core:core-ktx:1.3.2",
+            "appcompat"          : "androidx.appcompat:appcompat:1.2.0",
+            "constraintlayout"   : "androidx.constraintlayout:constraintlayout:2.0.4",
+            "recyclerview"       : "androidx.recyclerview:recyclerview:1.1.0",
+            "material"           : "com.google.android.material:material:1.2.1",
+            "multidex"           : "androidx.multidex:multidex:2.0.1",
+            // 协程相关
+            "coroutinescore"     : "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.7",
+            "coroutinesktx"      : "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.4",
+            // lifecycle 相关
+            "lifecycle_livedata" : "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0",
+            "lifecycle_vm"       : 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0',
+            "lifecycle_runtime"  : "androidx.lifecycle:lifecycle-runtime-ktx:2.2.0",
+            "lifecycle_vm_state" : "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0",
+            "lifecycle_common"   : "androidx.lifecycle:lifecycle-common-java8:2.2.0",
+            "lifecycle_ext"      : "androidx.lifecycle:lifecycle-extensions:2.2.0",
+            // 组件路由
+            "arouter"            : "com.alibaba:arouter-api:1.5.1",
+            // 图片加载
+            "glide"              : "com.github.bumptech.glide:glide:4.11.0",
+            //网络请求相关
+            "retrofit"           : "com.squareup.retrofit2:retrofit:2.9.0",
+            "retrofit_gson"      : "com.squareup.retrofit2:converter-gson:2.9.0",
+            "retrofit_scalars"   : "com.squareup.retrofit2:converter-scalars:2.9.0",
+            "retrofit_logger"    : "com.squareup.okhttp3:logging-interceptor:4.7.2",
+            "conscrypt"          : 'org.conscrypt:conscrypt-android:2.4.0',
+            // 布局异步加载
+            "asynclayoutinflater": "androidx.asynclayoutinflater:asynclayoutinflater:1.0.0",
+            "loadsir"            : "com.kingja.loadsir:loadsir:1.3.8",//loading、empty、error页面封装
+    ]
+
+
+    // 注解处理器
+    // dep_base_compiler = [
+    //         "glide"  : "com.github.bumptech.glide:compiler:4.11.0"
+    // ]
+
+    // 注解处理器 - 所有模块都需要使用
+    dep_all_compiler = [
+            "arouter": "com.alibaba:arouter-compiler:1.5.1",
+    ]
+
+
+    // 通用业务依赖组件
+    dep_common = [
+            "livebus"                : "com.jeremyliao:live-event-bus-x:1.7.2",
+            // 申请权限
+            "permission"             : "com.yanzhenjie:permission:2.0.3",
+            // PictureSelector图片选择器
+            "pictureSelector"        : "com.github.LuckSiege.PictureSelector:picture_library:2.5.9",
+            // 圆形图片
+            "circleimageview"        : 'de.hdodenhof:circleimageview:3.1.0',
+            // 刷新控件
+            "smartRefreshLayout"     : 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.4-7',
+            // 通用的RecyclerView的分割线，支持LinearLayoutManager和GridLayoutManager
+            "y_divideritemdecoration": 'com.yanyusong.y_divideritemdecoration:y_divideritemdecoration:2.0',
+            // view阴影效果控件
+            "shadowLayout"           : 'com.github.lihangleo2:ShadowLayout:3.0.4',
+            // 实现各种样式的tab
+            "magicIndicator"         : 'com.github.hackware1993:MagicIndicator:1.7.0',
+            // 滚动型条件选择器
+            // "pickerView"             : 'com.contrarywind:Android-PickerView:4.1.9',
+            //较为通用性日历控件
+            "ncalendar"              : 'com.necer.ncalendar:ncalendar:5.0.1',
+            // 支持侧滑删除的recyclerview
+            "swipe_recyclerview"     : 'com.yanzhenjie.recyclerview:x:1.3.2'
+
+    ]
+}

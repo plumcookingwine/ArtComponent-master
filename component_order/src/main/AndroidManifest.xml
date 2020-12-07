@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kangf.art.order">
+
+    <application>
+        <activity android:name=".OrderDetailActivity"></activity>
+        <activity android:name=".OrderActivity" />
+    </application>
+
+</manifest>
